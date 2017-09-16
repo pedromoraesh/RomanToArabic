@@ -90,7 +90,8 @@ public class Validator {
 	public static int toArabic(String roman){
 		int arabicEquivalent = 0;
 		int left, right;
-		boolean signalLastCaracter = true;
+		//Ocorreu uma subtração na ultima verificação? EX:CMIII, ocorre uma subtração em CM, nos ultimos caracteres
+		boolean signalLastCharacter = true;
 		String romanUpperCase = roman.toUpperCase();
 		if(whatKindOfNumber(romanUpperCase)== 1){
 			for (int i = romanUpperCase.length()-1; i > 0; i--) {
@@ -99,7 +100,7 @@ public class Validator {
 				if(right > left){
 					arabicEquivalent += (right - left);	
 					if(i==1){
-						signalLastCaracter = false;
+						signalLastCharacter = false;
 					}
 					i--;
 				}
@@ -108,7 +109,7 @@ public class Validator {
 				}
 						
 			}
-			if(signalLastCaracter == true){
+			if(signalLastCharacter == true){
 				arabicEquivalent += arabicEquivalent(romanUpperCase.charAt(0));
 			}
 		}
