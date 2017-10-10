@@ -63,8 +63,6 @@ public class Testing {
 		assertEquals(30, Validator.toArabic("xxx"));
 		
 		
-		assertTrue(false);
-		
 		
 	}
 	/*
@@ -80,7 +78,7 @@ public class Testing {
 		assertEquals("", Validator.toRoman("asd"));
 		assertEquals("", Validator.toRoman("xxx"));
 		
-		assertTrue(false);
+		
 	}
 
 	
