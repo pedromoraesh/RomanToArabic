@@ -63,8 +63,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="integration.Testing" name="testStaticNumbers" time="0.003"/>
+  <testcase classname="integration.Testing" name="testStaticNumbers" time="0.004"/>
   <testcase classname="integration.Testing" name="testLimitNumber" time="0"/>
-  <testcase classname="integration.Testing" name="testRomanToArabic" time="0.001"/>
-  <testcase classname="integration.Testing" name="testArabicToRoman" time="0.002"/>
+  <testcase classname="integration.Testing" name="testRomanToArabic" time="0.002"/>
+  <testcase classname="integration.Testing" name="testArabicToRoman" time="0"/>
 </testsuite>
